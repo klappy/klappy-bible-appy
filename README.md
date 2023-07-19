@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# klappy/klappy-bible-appy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have been using a proof-of-concept bible app that I made in ~2018-19 as my daily Bible app. It was built in a few weeks time over Thanksgiving and Christmas break with a few minor updates later in 2019. It was lovingly referred to as [Klappy's Bible App](https://unfoldingword-box3.github.io/translation-helps/). Here's the [Github](https://github.com/unfoldingWord-box3/translation-helps) repo.
 
-## Available Scripts
+## Time for an update after 5.5 years
 
-In the project directory, you can run:
+Over the past few years, I've been wanting to create a new one and use some updated tech and api's from unfoldingWord. The itch became so great that I started one in my spare time, although there isn't much of it.
 
-### `npm start`
+### Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Javascript (isomorphic)
+- React (commonly used)
+- Vite (fast and easy)
+- MUI Joy (fast and easy)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Architectural Goals for the App
 
-### `npm test`
+- Simple to bootstrap
+- Maintainable long term
+- Extensible for new content sources and formats
+- Flexible for swapping around workflows
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Abstracted Layers
 
-### `npm run build`
+- Simple yet flexible UI components
+- React hooks to manage most state and lifecycles
+- Reusable core functions common to any framework
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Start with Minimal but Functional UI/UX
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Start with off the shelf Joy components
+- Start with unfoldingWord CatalogNext API
+- Start with USFM, MD, TSV support
+- Start with single resource file viewing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Add Features over Time
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Improve the UI/UX
+- Add new resource APIs
+- Add new resource file types support
+- Add new view to combine resource viewing.
